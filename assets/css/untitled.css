@@ -3,17 +3,44 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg,#b7ff6a,#6afffa);
+  background: linear-gradient(0deg,#ee0979,#6afffa);
   background-repeat: no-repeat;
   background-position: 50%;
-  background-attachment: scroll;
+  background-attachment: fixed!important;
   background-size: cover;
+}
+
+header.masterhead:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(0deg,#b7ff6a,#6afffa);
 }
 
 header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
+  background: linear-gradient(0deg,#ee0979,#6afffa);
+  background-size: cover;
+}
+
+header.masthead .bg-circle:before {
+  content: '';
+  /*position: fixed;*/
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
   background: linear-gradient(180deg,#b7ff6a,#6afffa);
+  background-attachment: fixed;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+  background: #fff;
 }
 
