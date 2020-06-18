@@ -47,7 +47,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 #box-2 {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(0deg,#ee0979,#6afffa);
+  background-image: linear-gradient(0deg,#ee0979,#6afffa)!important;
   background-size: cover;
   display: table;
   background-attachment: fixed;
